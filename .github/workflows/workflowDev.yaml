@@ -17,5 +17,5 @@ jobs:
           python -m pip install numpy opencv-python
       - name: Run tests
         run: |
-          cd kalmanTracker  # Muda para o diretório do projeto
+          cd ~/kalmanTracker  # Muda para o diretório do projeto
           python -m unittest discover -s tests -p "test_kalmanTracker.py"
