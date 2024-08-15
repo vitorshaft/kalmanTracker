@@ -18,5 +18,5 @@ jobs:
       - name: Run tests
         run: |
           pwd
-          cd ..  # Muda para o diretório do projeto
-          python -m unittest discover -s tests -p "test_kalmanTracker.py"
+          ls
+          python /tests/test_kalmanTracker.py
