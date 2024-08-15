@@ -1,0 +1,15 @@
+name: Continuous Integration
+
+on: push
+
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Using Python3.9
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - run: python test_kalmanTracker.py
